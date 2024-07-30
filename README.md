@@ -1,22 +1,28 @@
-**About Dataset**
+# MovieMaestroBot
 
-These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. 
-The dataset consists of movies released on or before July 2017. 
-Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
-This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. 
-Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.
+MovieMaestroBot is a comprehensive movie recommendation system that includes various recommendation techniques such as a Simple Recommender, Content-Based Recommender, Movie Description-Based Recommender, Collaborative Filtering, and a Hybrid Recommender.
+
+## About Dataset
+
+-These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. 
+-Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
+-This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. 
+-Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.
+
+## Features
+
+- Simple Recommender: Provides basic movie recommendations based on popularity.
+- Content-Based Recommender: Recommends movies similar to a given movie based on features such as genre, director, and cast.
+- Movie Description-Based Recommender: Utilizes natural language processing to recommend movies based on their descriptions.
+- Collaborative Filtering: Recommends movies based on user interaction data, leveraging user-user or item-item collaborative filtering.
+- Hybrid Recommender: Combines multiple recommendation strategies to provide more accurate and robust recommendations.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/singhadwika/MovieMaestroBot.git
+cd MovieMaestroBot
 
 
-**This dataset consists of the following files:**
-
-movies_metadata.csv: The main Movies Metadata file. Contains information on 45,000 movies featured in the Full MovieLens dataset. Features include posters, backdrops, budget, revenue, release dates, languages, production countries and companies.
-
-keywords.csv: Contains the movie plot keywords for our MovieLens movies. Available in the form of a stringified JSON Object.
-
-credits.csv: Consists of Cast and Crew Information for all our movies. Available in the form of a stringified JSON Object.
-
-links.csv: The file that contains the TMDB and IMDB IDs of all the movies featured in the Full MovieLens dataset.
-
-links_small.csv: Contains the TMDB and IMDB IDs of a small subset of 9,000 movies of the Full Dataset.
-
-ratings_small.csv: The subset of 100,000 ratings from 700 users on 9,000 movies.
